@@ -2,6 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Button, TextField } from "@mui/material";
 
+
+
 const StyledForm = styled.form`
   display: flex;
   justify-content: space-between;
@@ -45,6 +47,7 @@ export const InputForm: React.FC<Props> = ({
     }
 
     await getData();
+
   }
 
   return (
@@ -81,4 +84,6 @@ export const InputForm: React.FC<Props> = ({
       </Button>
     </StyledForm>
   )
+
 }
+

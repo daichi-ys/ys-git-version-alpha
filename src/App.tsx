@@ -49,8 +49,11 @@ function App() {
       <Typography variant="h1" sx={{fontSize: "32px"}}>今日やること</Typography>
       <InputForm getData={getTodoList} />
       <List getData={getTodoList} todoList={todoList} />
+
     </StyledContainer>
   )
 }
 
+
 export default App;
+

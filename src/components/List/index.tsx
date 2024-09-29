@@ -29,6 +29,7 @@ const StyledButtonWrapper = styled.div`
 `;
 
 type Props = {
+
   getData: () => Promise<void>
   todoList: TodoList[]
 }
@@ -71,6 +72,7 @@ export const List: React.FC<Props> = ({
     }
 
     await getData();
+
   }
 
   return (
@@ -106,7 +108,9 @@ export const List: React.FC<Props> = ({
               </Button>
               <Button
                 type="button"
+
                 onClick={() => completedTodoItem(item)}
+
                 variant="contained"
                 size="small"
                 sx={{
